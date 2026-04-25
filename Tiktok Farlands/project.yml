@@ -1,0 +1,35 @@
+name: Tiktok Farlands
+options:
+  bundleIdPrefix: com.tyler
+  deploymentTarget:
+    iOS: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0
+    INFOPLIST_FILE: "Tiktok Farlands/Info.plist"
+    CODE_SIGN_STYLE: Manual
+    PRODUCT_BUNDLE_IDENTIFIER: com.tyler.tiktokfarlands
+    TARGETED_DEVICE_FAMILY: 1
+
+targets:
+  Tiktok Farlands:
+    type: application
+    platform: iOS
+    sources:
+      - path: "Tiktok Farlands"
+        excludes:
+          - "README.md"
+          - ".gitignore"
+          - "Secrets.xcconfig"
+          - "Info.plist.template"
+          - "project.yml"
+    settings:
+      base:
+        PRODUCT_NAME: "Tiktok Farlands"
+    info:
+      path: "Tiktok Farlands/Info.plist"
+    scheme:
+      testTargets: []
